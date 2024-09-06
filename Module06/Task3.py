@@ -1,8 +1,10 @@
-gallon = int(input("Enter the conversion: (g/l): "))
-
 def conversion(gallon):
     litres = gallon * 3.785
-    statement = print(f'{gallon} gallons is {litres:.2f} litres')
-    return statement
+    return litres
 
-conversion(gallon)
+while True:
+    gallon = float(input("Enter the conversion: (g/l): "))
+    if gallon <= 0:
+        break
+    else:
+        print(conversion(gallon))
