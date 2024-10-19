@@ -1,5 +1,5 @@
 import requests
-api_key = "b89a4fe41107b250a54812e5e2814166"
+api_key = "<api_key>"
 
 class Inputs:
     def __init__(self, city_name, state_code, country_code):
